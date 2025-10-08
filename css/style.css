@@ -4,7 +4,7 @@ body, h1, h2, p, ul, li, a {
 }
 
 body {
-    font-family: "Playfair Display", Helverica, Arial, sans-serif;
+    font-family: "Playfair Display", Helvetica, Arial, sans-serif;
     color: #333333;
     background: #FAF3E0;
 }
@@ -30,6 +30,7 @@ img {
     background: white;
     max-width: 1300px;
     margin: 0 auto;
+    padding-bottom: 1px;
 }
 
 /*Superinfo*/
@@ -295,4 +296,98 @@ img {
     font-size: 1.25em;
     line-height: 1.4;
     color: #7c7c7c;
+}
+
+/*Contato*/
+
+.contato {
+    background: #FFD9A6;
+    text-align: center;
+    padding: 60px calc((100% - 1200px)/2);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contato-info {
+    flex: 1 1 260px;
+    margin: 0 10px;
+}
+
+.contato-info h1 {
+    max-width: 230px;
+    font-size: 3em;
+    color: #333333;
+}
+
+.contato-info p {
+    font-size: 1.25em;
+    max-width: 230px;
+    color: #7c7c7c;
+    margin-bottom: 10px;
+}
+
+.contato-form {
+    flex: 2 1 600px;
+    margin: 0 10px;
+    align-self: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contato-form input {
+    flex: 3 1 200px;
+    font-size: 1.25em; 
+    color: #7c7c7c;
+    font-family: "Playfair Display", Helvetica, Arial, sans-serif;
+    border: 4px solid #333333;
+    background: #FAF3E0;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.contato-form textarea {
+    flex: 3 1 260px;
+    font-size: 1.25em; 
+    color: #7c7c7c;
+    font-family: "Playfair Display", Helvetica, Arial, sans-serif;
+    border: 4px solid #333333;
+    background: #FAF3E0;
+    padding: 10px;
+    margin: 0px;
+    border-radius: 0px;
+}
+
+.contato-form button {
+    flex: 1 1 260px;
+    font-family: "Playfair Display", Helvetica, Arial, sans-serif;
+    font-size: 2.25em;
+    font-weight: bold;
+    background: #333333;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 0px;
+    padding: 30px 10px;
+}
+
+@media (max-width: 600px) {
+    .contato-form button {
+        font-size: 1.5em;
+    }
+}
+
+/*Rodapé*/
+
+.footer {
+    display: flex;
+    background: #FAF3E0;
+    height: 200px;
+    align-items: center;
+}
+
+.footer p {
+    flex: 1;
+    text-align: center;
+    font-size: 2em;
+    color: #333333;
 }
